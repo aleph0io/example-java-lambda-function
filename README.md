@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a (simple) example AWS Lambda function using my [Java 17 Lambda Base Image](https://github.com/sigpwned/aws-lambda-java-base-images). You can always find the base images in the [ECR Public Gallery](https://gallery.ecr.aws/m6n4d7c2/sigpwned/aws-lambda-java-base-image).
+This is a (simple) example AWS Lambda function using my [Java 17 Lambda Base Image](https://github.com/sigpwned/aws-lambda-java-base-images). You can always find the base images in the [ECR Public Gallery](https://gallery.ecr.aws/m6n4d7c2/sigpwned/aws-lambda-java-base-image). Note that as of the time of this writing, the base image only supports x86_64, so build your images accordingly.
 
 ## Build
 
