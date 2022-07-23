@@ -16,9 +16,9 @@ Nest, you'd push your image to an ECR repository called `example-java-17-lambda-
 
 Finally, you'd [create a new Lambda function with your container](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-images.html). Then you can test it in the console:
 
-    ![AWS Console Test Input](/test-input.png)
+![AWS Console Test Input](/test-input.png)
 
-    ![AWS Console Test Output](/test-output.png)
+![AWS Console Test Output](/test-output.png)
 
 ## Future Work
 
