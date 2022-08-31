@@ -21,7 +21,7 @@ under the License.
 
     <groupId>com.sigpwned</groupId>
     <artifactId>hello-lambda</artifactId>
-    <version>0.0.0-SNAPSHOT</version>
+    <version>18.0.2</version>
     <name>hello-lambda</name>
     <inceptionYear>2022</inceptionYear>
     <description>Very simple AWS lambda using Custom Java Base Image</description>
@@ -60,6 +60,8 @@ under the License.
 
     <properties>
         <java.version>18</java.version>
+        <java.revision>${project.version}</java.revision>
+        <os.platform>al2</os.platform>
         <dropwizard.version>2.1.1</dropwizard.version>
     </properties>
 
@@ -141,6 +143,23 @@ under the License.
                 <configuration>
                     <images>
                         <image>
+                            <build>
+                                <dockerFileDir>${project.basedir}</dockerFileDir>
+                                <args>
+                                    <JAVA_VERSION>${java.version}</JAVA_VERSION>
+                                    <JAVA_REVISION>${java.revision}</JAVA_REVISION>
+                                    <OS_PLATFORM>${os.platform}</OS_PLATFORM>
+                                </args>
+                                <tags>
+                                    <tag>${java.revision}</tag>
+                                    <tag>${java.revision}-${os.platform}</tag>
+                                </tags>
+                                <labels>
+                                    <java.version>${java.version}</java.version>
+                                    <java.revision>${java.revision}</java.revision>
+                                    <os.platform>${os.platform}</os.platform>
+                                </labels>
+                            </build>
                             <name>${aws.account}.dkr.ecr.${aws.region}.amazonaws.com/example-java-lambda-function</name>
                         </image>
                     </images>
