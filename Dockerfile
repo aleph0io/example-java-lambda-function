@@ -15,7 +15,11 @@
 # specific language governing permissions and limitations
 # under the License.
 
-FROM public.ecr.aws/aleph0io/lambda/java:17.0.3-al2
+ARG JAVA_VERSION=17
+ARG JAVA_REVISION=17.0.4
+ARG OS_PLATFORM=al2
+
+FROM public.ecr.aws/aleph0io/lambda/java:${JAVA_REVISION}-${OS_PLATFORM}
 
 COPY target/hello-lambda.jar "${LAMBDA_TASK_ROOT}/lib/"
 
