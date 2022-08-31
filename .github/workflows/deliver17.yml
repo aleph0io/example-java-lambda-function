@@ -35,4 +35,8 @@ jobs:
       - name: Login to Amazon ECR Public
         uses: aws-actions/amazon-ecr-login@v1
       - name: Deploy artifacts
-        run: mvn -B clean compile install deploy
+        run: mvn -B -Daws.account="$AWS_ACCOUNT_ID" -Daws.region="$AWS_REGION" clean compile install deploy
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCOUNT_ID: ${{ secrets.CD_AWS_ACCOUNT_ID }}
+        

@@ -28,4 +28,4 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - name: Build and test
-        run: mvn -B clean compile install
+        run: mvn -B -Daws.account=local -Daws.region=xx-xxxx-x clean compile install
