@@ -24,8 +24,8 @@ under the License.
     <version>0.0.0-SNAPSHOT</version>
     <name>hello-lambda</name>
     <inceptionYear>2022</inceptionYear>
-    <description>Very simple AWS lambda using Java 17 Base Image</description>
-    <url>https://github.com/sigpwned/example-java-17-lambda-function</url>
+    <description>Very simple AWS lambda using Custom Java Base Image</description>
+    <url>https://github.com/sigpwned/example-java-lambda-function</url>
     <packaging>jar</packaging>
 
     <organization>
@@ -34,9 +34,9 @@ under the License.
     </organization>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com/sigpwned/example-java-17-lambda-function.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/example-java-17-lambda-function.git</developerConnection>
-        <url>https://github.com/sigpwned/example-java-17-lambda-function/tree/main</url>
+        <connection>scm:git:ssh://git@github.com/sigpwned/example-java-lambda-function.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/example-java-lambda-function.git</developerConnection>
+        <url>https://github.com/sigpwned/example-java-lambda-function/tree/main</url>
     </scm>
 
     <licenses>
@@ -55,7 +55,7 @@ under the License.
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/sigpwned/example-java-17-lambda-function</url>
+        <url>https://github.com/sigpwned/example-java-lambda-function</url>
     </issueManagement>
 
     <properties>
@@ -141,7 +141,7 @@ under the License.
                 <configuration>
                     <images>
                         <image>
-                            <name>${aws.account}.dkr.ecr.${aws.region}.amazonaws.com/example-java-17-lambda-function</name>
+                            <name>${aws.account}.dkr.ecr.${aws.region}.amazonaws.com/example-java-lambda-function</name>
                         </image>
                     </images>
                 </configuration>
