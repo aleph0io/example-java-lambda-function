@@ -21,7 +21,7 @@ under the License.
 
     <groupId>com.sigpwned</groupId>
     <artifactId>hello-lambda</artifactId>
-    <version>17.0.4</version>
+    <version>20.0.0</version>
     <name>hello-lambda</name>
     <inceptionYear>2022</inceptionYear>
     <description>Very simple AWS lambda using Custom Java Base Image</description>
@@ -59,7 +59,7 @@ under the License.
     </issueManagement>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>20</java.version>
         <java.revision>${project.version}</java.revision>
         <os.platform>al2</os.platform>
         <dropwizard.version>2.1.4</dropwizard.version>

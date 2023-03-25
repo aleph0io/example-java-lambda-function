@@ -15,8 +15,8 @@
 # specific language governing permissions and limitations
 # under the License.
 
-ARG JAVA_VERSION=17
-ARG JAVA_REVISION=17.0.4
+ARG JAVA_VERSION=20
+ARG JAVA_REVISION=20.0.0
 ARG OS_PLATFORM=al2
 
 FROM public.ecr.aws/aleph0io/lambda/java:${JAVA_REVISION}-${OS_PLATFORM}
