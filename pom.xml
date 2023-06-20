@@ -62,7 +62,7 @@ under the License.
         <java.version>17</java.version>
         <java.revision>${project.version}</java.revision>
         <os.platform>al2</os.platform>
-        <dropwizard.version>2.1.4</dropwizard.version>
+        <dropwizard.version>4.0.1</dropwizard.version>
     </properties>
 
     <build>
